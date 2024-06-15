@@ -1,0 +1,9 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\misso\\Documents\\Unreal Projects\\Airsimtest2022\\Source\\Airsimtest2022\\Airsimtest2022.Build.cs",
+		"C:\\Users\\misso\\Documents\\Unreal Projects\\Airsimtest2022\\Plugins\\AirSim\\Source\\AirSim.Build.cs",
+		"C:\\Users\\misso\\Documents\\Unreal Projects\\Airsimtest2022\\Source\\Airsimtest2022.Target.cs",
+		"C:\\Users\\misso\\Documents\\Unreal Projects\\Airsimtest2022\\Source\\Airsimtest2022Editor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}
