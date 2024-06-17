@@ -1,0 +1,121 @@
+{
+  "SettingsVersion": 1.2,
+  "SimMode": "Multirotor",
+  "Vehicles": {
+    "PX4": {
+      "VehicleType": "PX4Multirotor",
+      "AutoCreate": true,
+      "X": 0, "Y": 0, "Z": 0,
+      "Sensors": {
+        "Barometer":{
+                    "SensorType": 1,
+                    "Enabled": true,
+                    "PressureFactorSigma": 0.0001825
+                },
+	"Gps": {
+          	"SensorType": 1,
+          	"Enabled": true
+        }
+
+      },
+      "Parameters": {
+                "NAV_RCL_ACT": 0,
+                "NAV_DLL_ACT": 0,
+                "COM_OBL_ACT": 1,
+                "LPE_LAT": 47.641468,
+                "LPE_LON": -122.140165
+            },
+       "OriginGeopoint": {
+               "Latitude": 47.641468,
+               "Longitude": -122.140165,
+               "Altitude": 122
+            },
+      "Lockstep": true,
+      "ControlIp": "127.0.0.1",
+      "ControlPortLocal": 14540,
+      "ControlPortRemote": 14580,
+      "LogViewerHostIp": "127.0.0.1",
+      "LogViewerPort": 14388,
+      "OffboardCompID": 1,
+      "OffboardSysID": 134,
+      "QgcHostIp": "127.0.0.1",
+      "QgcPort": 14550,
+      "SerialBaudRate": 115200,
+      "SerialPort": "*",
+      "SimCompID": 42,
+      "SimSysID": 142,
+      "TcpPort": 4560,
+      "UdpIp": "127.0.0.1",
+      "UdpPort": 14560,
+      "UseSerial": false,
+      "UseTcp": false,
+      "VehicleCompID": 1,
+      "VehicleSysID": 135,
+      "Model": "Generic",
+      "LocalHostIp": "127.0.0.1",
+      "Logs": "d:\\temp\\mavlink"
+    }
+  },
+  "Recording": {
+    "RecordOnMove": false,
+    "RecordInterval": 0.05,
+    "Folder": "",
+    "Enabled": false,
+    "Cameras": [
+      { "CameraName": "0", "ImageType": 0, "PixelsAsFloat": false, "VehicleName": "", "Compress": true }
+    ]
+  },
+  "CameraDefaults": {
+    "CaptureSettings": [
+      {
+        "ImageType": 0,
+        "Width": 256,
+        "Height": 144,
+        "FOV_Degrees": 90,
+        "AutoExposureSpeed": 100,
+        "AutoExposureBias": 0,
+        "AutoExposureMaxBrightness": 0.64,
+        "AutoExposureMinBrightness": 0.03,
+        "MotionBlurAmount": 0,
+        "TargetGamma": 1.0,
+        "ProjectionMode": "",
+        "OrthoWidth": 5.12
+      }
+    ],
+    "NoiseSettings": [
+      {
+        "Enabled": false,
+        "ImageType": 0,
+        "RandContrib": 0.2,
+        "RandSpeed": 100000.0,
+        "RandSize": 500.0,
+        "RandDensity": 2,
+        "HorzWaveContrib": 0.03,
+        "HorzWaveStrength": 0.08,
+        "HorzWaveVertSize": 1.0,
+        "HorzWaveScreenSize": 1.0,
+        "HorzNoiseLinesContrib": 1.0,
+        "HorzNoiseLinesDensityY": 0.01,
+        "HorzNoiseLinesDensityXY": 0.5,
+        "HorzDistortionContrib": 1.0,
+        "HorzDistortionStrength": 0.002
+      }
+    ]
+  },
+  "SubWindows": [
+    { "WindowID": 0, "CameraName": "0", "ImageType": 3, "VehicleName": "", "Visible": false, "External": false },
+    { "WindowID": 1, "CameraName": "0", "ImageType": 5, "VehicleName": "", "Visible": false, "External": false },
+    { "WindowID": 2, "CameraName": "0", "ImageType": 0, "VehicleName": "", "Visible": false, "External": false }
+  ],
+  "SegmentationSettings": {
+    "InitMethod": "",
+    "MeshNamingMethod": "",
+    "OverrideExisting": true
+  },
+  "PawnPaths": {
+    "BareboneCar": { "PawnBP": "Class'/AirSim/VehicleAdv/Vehicle/VehicleAdvPawn.VehicleAdvPawn_C'" },
+    "DefaultCar": { "PawnBP": "Class'/AirSim/VehicleAdv/SUV/SuvCarPawn.SuvCarPawn_C'" },
+    "DefaultQuadrotor": { "PawnBP": "Class'/AirSim/Blueprints/BP_FlyingPawn.BP_FlyingPawn_C'" },
+    "DefaultComputerVision": { "PawnBP": "Class'/AirSim/Blueprints/BP_ComputerVisionPawn.BP_ComputerVisionPawn_C'" }
+  }
+}
