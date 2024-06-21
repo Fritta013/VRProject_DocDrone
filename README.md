@@ -36,7 +36,7 @@ This project aims to create a simulated control room using Unreal Engine 4.27, i
 - **Integration:** Uses Cesium for 3D environments, Google Maps for real-world data, and Landscape Mountain for terrain.
 
 
-![Flowchart](path/to/dronefinal.png)
+![Flowchart](dronefinal.png)
 
 ## Getting Started
 
