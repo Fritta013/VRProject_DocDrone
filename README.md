@@ -35,32 +35,62 @@ The simulation supports the development and validation of algorithms for path pl
 
 ![Flowchart](dronefinal.png)
 
-## Getting Started
 
-### DroneShell API Control
+## Install Epic Game Launcher & Unreal Engine 4.27 🛠️
 
-1. Start the Unreal Engine project and press Play.
-2. Run DroneShell.exe in the AirSim folder.
-3. Use commands like RequestControl, Arm, TakeOff, Land.
-4. Type `help` for additional commands.
+## Download Package 📦
 
-### PX4 SITL API Control
+To download the project files, go to Google Drive and look for a file called "Assignment VR". Inside, you'll find two zip folders and a script called "setting.json".
 
-- Runs on Linux, communicates with PX4 using MAVLink API.
-- Uses UDP (Ports 14550 or 18570) and TCP (Port 4560).
-- Requires LocalHostIP and ControlIP configuration.
+1. **Extract Files**
 
-### Python API Control
+   - **Drone_VR Folder:** Contains the Unreal Engine environment. Extract it into the `Documents\Unreal Projects` directory.
+   - **Drone_shell Folder:** Contains the `main.cpp` and Python scripts. Extract it into the AirSim folder you downloaded. Note that there's already a file named "Drone_shell" inside the AirSim package, so you'll need to replace it with the one from the project files. The program is written in C++, so you'll need to compile it before running it.
 
-- Controls position, altitude, weather, and more using Python.
-- Example trajectory: Hospital > Charging Station 1 > Patient > Charging Station 2 > Hospital.
-- Coordinates: (125, 0), (125, -130), (0, -130), (0, 0).
+2. **Compile Program** 🖥️
 
-## Enhancements and Future Work
-- Upgrade to Unreal Engine 5.3/5.4 for advanced simulation.
-- Incorporate machine learning for autonomous navigation and efficiency.
-- Implement real-time analytics for mission performance using drone RGBD cameras.
+   After adding the `Drone_shell` file and extracting it, you can use the Developer Command Prompt VS22 to navigate to the repository where you put the AirSim package. Then, you can call `build.cmd` to compile the program and generate the "Plugin" folder for Unreal Engine.
 
+3. **Copy Files** 📂
+
+   - **Drone_shell File:** Copy the `Drone_shell` file from the AirSim package and paste it into the `Documents\Unreal Projects\Drone_VR` folder.
+   - **Plugin File:** Copy the `Plugin` file from the `AirSim\Unreal` package and paste it into the `Documents\Unreal Projects\Drone_VR` folder. There may already be a "Plugins" folder inside the "Drone_VR" directory. Simply replace it with the new one from the AirSim package.
+
+4. **Generate Visual Studio Project Files** 📄
+
+   Right-click on the `Dorne_VR.uproject` file in the `Drone_VR` folder and select **Generate Visual Studio project files** to perform the final compilation of the project with the newly added files.
+
+5. **Open the Project** 🔧
+
+   Open the `Drone VR.sln` file and ensure that the configuration solution is set to `Debug Game Editor` and the solution platform is set to `Win64` and start the project. The initial compilation may take some time. If the Unreal environment does not open, try restarting the project.
+
+## AirSim Plugin Setup 🛸
+
+If you're using the AirSim plugin for the first time in Unreal Engine, follow these steps:
+
+1. **Check Plugin Installation** 🔍
+
+   - Go to **Edit/Plugins** and search for "AirSim".
+
+2. **Set Game Mode Override** 🎮
+
+   - Go to **Window/World Settings** and set the GameMode Override to `AirSimGameMode`.
+
+3. **First-Time Setup** 🛫
+
+   - When you first play the game, Unreal will ask you which type of vehicle you want to use with AirSim. Select one and start playing.
+
+4. **Optimize Performance** ⚙️
+
+   - Go to **Edit/Editor Preferences**, search for "CPU", and uncheck the option **Use Less CPU when in Background**. This ensures optimal performance by preventing Unreal Engine from slowing down when the window loses focus.
+
+5. **Update Settings** 📁
+
+   - Stop the game and close the environment. In your Documents folder, find the `AirSim` folder created automatically after the first run. Inside, replace the existing `settings.json` file with the one you downloaded from our Google Drive.
+
+6. **Reopen Project** 🚀
+
+   - Reopen the `Drone_VR.sln` file in your Unreal project folder. The changes in the new `settings.json` file and the existing file will merge automatically.
 ## Students:
 
 - Ines Haouala
