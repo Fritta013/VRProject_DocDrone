@@ -1,25 +1,22 @@
 # VRProject_DocDrone
 
 
+# Introduction 🚀
 
-## Project Overview
+This project involves creating a virtual control room using Unreal Engine 4.27 and the AirSim plugin, which provides a detailed simulation environment for smart ambulances (UGVs) and drones (UAVs) in medical payload transport. The simulation features various types of terrain, urban landscapes, and obstacles that these vehicles must navigate. It allows for the testing and validation of different sensors, including LIDAR, RGB, and thermal cameras.
 
-This project aims to create a simulated control room using Unreal Engine 4.27, integrating AirSim to simulate smart ambulances (UGVs) and drones (UAVs) for medical payload transport. The system features real-time path planning using 2D map data from Cesium or Google Maps and includes sensor integration for navigation and monitoring. The platform supports both Windows and Linux environments using Unreal Engine, AirSim, PX4, D-Flight API, and Python scripting.
+The simulation supports the development and validation of algorithms for path planning, navigation, and real-time data collection. It enables the integration of new features and applications into the vehicle's hardware and software. Furthermore, the use of AI and machine learning algorithms in the simulation enhances the precision and efficiency of navigation and data analysis, contributing to the overall advancement of medical transport solutions.
+
 
 ## Objectives
 
-1. **Develop real-time path planning for UGVs** using 2D maps from Cesium or Google Maps.
-2. **Integrate navigation sensors** such as GPS and barometers.
-3. **Create a mission generator and logging system** for data recording and analysis.
-4. **Ensure platform compatibility** with Windows and Linux.
-5. **Analyze mission performance and UAV health** in a control center.
+1. **Integrate navigation sensors** such as GPS and barometers.
+2. **Create a mission generator and logging system** for data recording and analysis.
+3. **Ensure platform compatibility** with Windows and Linux.
+4. **Analyze mission performance and UAV health** in a control center.
+5. **Ensure carrying medicines from the medical center** to the patient in a square path passing by charging stations.
 
 ## Tools and Components
-
-### AirSim Vehicles
-
-- **Multirotors:** For aerial tasks like photography and inspection.
-- **Fixed-Wing Aircraft:** For aviation applications.
 
 ### AirSim/PX4 Specifications
 
