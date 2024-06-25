@@ -3,7 +3,7 @@
 
 # Introduction 🚀
 
-This project involves creating a virtual control room using Unreal Engine 4.27 and the AirSim plugin, which provides a detailed simulation environment for smart ambulances (UGVs) and drones (UAVs) in medical payload transport. The simulation features various types of terrain, urban landscapes, and obstacles that these vehicles must navigate. It allows for the testing and validation of different sensors, including LIDAR, RGB, and thermal cameras.
+This project involves creating a virtual control room using Unreal Engine 4.27 and the AirSim plugin, which provides a detailed simulation environment for smart ambulance drone (UAV) in medical payload transport. The simulation features various types of terrain, urban landscapes, and obstacles that these vehicles must navigate. It allows for the testing and validation of different sensors, including LIDAR, RGB, and thermal cameras.
 
 The simulation supports the development and validation of algorithms for path planning, navigation, and real-time data collection. It enables the integration of new features and applications into the vehicle's hardware and software. Furthermore, the use of AI and machine learning algorithms in the simulation enhances the precision and efficiency of navigation and data analysis, contributing to the overall advancement of medical transport solutions.
 
@@ -40,12 +40,12 @@ The simulation supports the development and validation of algorithms for path pl
 
 ## Download Package 📦
 
-To download the project files, go to Google Drive and look for a file called "Assignment VR". Inside, you'll find two zip folders and a script called "setting.json".
+To download the project files, clone this project and look for "setting.json" file. Copy this file in Airsim folder inside your main project. 
 
 1. **Extract Files**
 
    - **Drone_VR Folder:** Contains the Unreal Engine environment. Extract it into the `Documents\Unreal Projects` directory.
-   - **Drone_shell Folder:** Contains the `main.cpp` and Python scripts. Extract it into the AirSim folder you downloaded. Note that there's already a file named "Drone_shell" inside the AirSim package, so you'll need to replace it with the one from the project files. The program is written in C++, so you'll need to compile it before running it.
+   - **Drone_shell Folder:** Contains the cpp and Python scripts. Extract it into the AirSim folder you downloaded. Note that there's already a file named "Drone_shell" inside the AirSim package, so you'll need to replace it with the one from the project files. The program is written in python, the name of the python file to run is `DocDronefinal.py` .
 
 2. **Compile Program** 🖥️
 
@@ -53,16 +53,16 @@ To download the project files, go to Google Drive and look for a file called "As
 
 3. **Copy Files** 📂
 
-   - **Drone_shell File:** Copy the `Drone_shell` file from the AirSim package and paste it into the `Documents\Unreal Projects\Drone_VR` folder.
-   - **Plugin File:** Copy the `Plugin` file from the `AirSim\Unreal` package and paste it into the `Documents\Unreal Projects\Drone_VR` folder. There may already be a "Plugins" folder inside the "Drone_VR" directory. Simply replace it with the new one from the AirSim package.
+   - **Drone_shell File:** Copy the `Drone_shell` file from the AirSim package and paste it into the `Documents\Unreal Projects\VRProject_DocDrone` folder.
+   - **Plugin File:** Copy the `Plugin` file from the `AirSim\Unreal` package and paste it into the `Documents\Unreal Projects\VRProject_DocDrone` folder. There may already be a "Plugins" folder inside the "VRProject_DocDrone" directory. Simply replace it with the new one from the AirSim package.
 
 4. **Generate Visual Studio Project Files** 📄
 
-   Right-click on the `Dorne_VR.uproject` file in the `Drone_VR` folder and select **Generate Visual Studio project files** to perform the final compilation of the project with the newly added files.
+   Right-click on the `Airsimtest2022.uproject` file in the `VRProject_DocDrone` folder and select **Generate Visual Studio project files** to perform the final compilation of the project with the newly added files.
 
 5. **Open the Project** 🔧
 
-   Open the `Drone VR.sln` file and ensure that the configuration solution is set to `Debug Game Editor` and the solution platform is set to `Win64` and start the project. The initial compilation may take some time. If the Unreal environment does not open, try restarting the project.
+   Open the `Airsimtest2022.sln` file and ensure that the configuration solution is set to `Debug Game Editor` and the solution platform is set to `Win64` and start the project. The initial compilation may take some time. If the Unreal environment does not open, try restarting the project.
 
 ## AirSim Plugin Setup 🛸
 
