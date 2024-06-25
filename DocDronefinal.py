@@ -1,4 +1,4 @@
-explain briefly and in the most effective way, what this code do: import airsim
+import airsim
 import time
 import math
 import numpy as np
@@ -45,8 +45,6 @@ def rest_and_charge(client, point, duration):
     client.moveToPositionAsync(point[0], point[1], -5, 1).join()
     time.sleep(duration)
 
-print("""This script is designed to fly on the streets of the Neighborhood environment
-and assumes the unreal position of the drone is [160, -1500, 120].""")
 
 client = airsim.MultirotorClient()
 client.confirmConnection()
@@ -101,7 +99,7 @@ print("Back to hospital!")
 # Land the drone and disarm
 print("Landing...")
 client.landAsync().join()
-print("Disarming...")
+print("Disarming... MISSION COMPLETE")
 client.armDisarm(False)
 client.enableApiControl(False)
 print("Done.")
