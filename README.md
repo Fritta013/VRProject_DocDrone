@@ -93,7 +93,11 @@ If you're using the AirSim plugin for the first time in Unreal Engine, follow th
    - Reopen the `Drone_VR.sln` file in your Unreal project folder. The changes in the new `settings.json` file and the existing file will merge automatically.
 
 ## Demo Video: 
-
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=kw_Ca7_TKh4" target="_blank">
+    <img src="https://img.youtube.com/vi/kw_Ca7_TKh4/0.jpg" alt="Watch the video" style="width:100%; max-width:600px;"/>
+  </a>
+</p>
 
 ## Students:
 
